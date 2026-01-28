@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Le Journal de Génie - Portfolio 2026</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Vidéo de fond -->
+    <video autoplay muted loop playsinline class="background-video">
+        <source src="assets/background.mp4" type="video/mp4">
+    </video>
+
+    <!-- En-tête -->
+    <header>
+        <div class="header-content">
+            <div class="header-top">
+                <div class="header-title">
+                    <div class="header-bar"></div>
+                    <div>
+                        <h1 class="serif">LE JOURNAL DE GÉNIE</h1>
+                        <p class="header-subtitle">PORTFOLIO • ÉDITION 2026</p>
+                    </div>
+                </div>
+                <button class="btn-back" id="btnBack">
+                    <span>← RETOUR</span>
+                </button>
+            </div>
+            <nav>
+                <button data-category="projets">PROJETS</button>
+                <button data-category="experiences">EXPÉRIENCES</button>
+                <button data-category="a-propos">À PROPOS</button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Contenu principal -->
+    <main class="container">
+        <!-- Vue d'accueil -->
+        <div id="homeView">
+            <!-- Section héroïque -->
+            <div class="hero-grid">
+                <div class="hero-image">
+                    <img src="assets/IMG_4433.jpg" alt="Photo de une">
+                    <div class="hero-overlay"></div>
+                    <div class="hero-content-img">
+                        <div class="badge">À LA UNE</div>
+                        <h2 class="serif">Portfolio 2026</h2>
+                        <p>Découvrez mes projets et mon parcours </p>
+                    </div>
+                </div>
+                <div class="hero-text">
+                    <div class="hero-date">
+                        <span class="date-text"></span>
+                    </div>
+                    <h1 class="serif">LE JOURNAL<br>DE GÉNIE</h1>
+                    <div class="divider"></div>
+                    <p>Étudiant en Bachelor Informatique<br><span style="font-size: 1.125rem;">Epitech Bordeaux</span></p>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <span>📞</span>
+                            <span>07 69 71 53 90</span>
+                        </div>
+                        <div class="contact-item">
+                            <span>📧</span>
+                            <span>toumi.genie@gmail.com</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Catégories -->
+            <div class="categories-grid">
+                <div class="category-card" data-category="projets">
+                    <img src="https://images.unsplash.com/photo-1605379399843-5870eea9b74e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxkZXZlbG9wZXIlMjBwcm9ncmFtbWluZyUyMGNvbXB1dGVyfGVufDF8fHx8MTc2ODIxMTc1N3ww&ixlib=rb-4.1.0&q=80&w=1080" alt="Projets">
+                    <div class="category-overlay"></div>
+                    <div class="category-content">
+                        <div class="badge">RUBRIQUE</div>
+                        <svg class="category-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/>
+                        </svg>
+                        <h2 class="serif">PROJETS</h2>
+                        <p>Mes réalisations techniques</p>
+                        <span class="category-link">Voir les articles →</span>
+                    </div>
+                </div>
+
+                <div class="category-card" data-category="experiences">
+                    <img src="https://images.unsplash.com/photo-1739298061740-5ed03045b280?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx0ZWFtd29yayUyMG9mZmljZSUyMGNvbGxhYm9yYXRpb258ZW58MXx8fHwxNzY4MjExNzU3fDA&ixlib=rb-4.1.0&q=80&w=1080" alt="Expériences">
+                    <div class="category-overlay"></div>
+                    <div class="category-content">
+                        <div class="badge">RUBRIQUE</div>
+                        <svg class="category-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                        </svg>
+                        <h2 class="serif">EXPÉRIENCES</h2>
+                        <p>Mon parcours professionnel</p>
+                        <span class="category-link">Voir les articles →</span>
+                    </div>
+                </div>
+
+                <div class="category-card" data-category="a-propos">
+                    <img src="https://images.unsplash.com/photo-1765728617352-895327fcf036?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx0ZWNoJTIwb2ZmaWNlJTIwbW9kZXJufGVufDF8fHx8MTc2ODIxMTc1N3ww&ixlib=rb-4.1.0&q=80&w=1080" alt="À propos">
+                    <div class="category-overlay"></div>
+                    <div class="category-content">
+                        <div class="badge">RUBRIQUE</div>
+                        <svg class="category-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/>
+                        </svg>
+                        <h2 class="serif">À PROPOS</h2>
+                        <p>Mon profil et compétences</p>
+                        <span class="category-link">Voir l'article →</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Section en bref -->
+            <div class="brief-section">
+                <div class="brief-header">
+                    <div class="brief-bar"></div>
+                    <h2 class="serif">EN BREF</h2>
+                </div>
+                <div class="brief-grid">
+                    <div class="brief-card">
+                        <div class="label">FORMATION</div>
+                        <h3 class="serif">Recherche de stage</h3>
+                        <p>Stage de 1 à 3 mois recherché entre juin et août 2026 dans le domaine de l'informatique. Actuellement en Bachelor à Epitech Bordeaux.</p>
+                    </div>
+                    <div class="brief-card">
+                        <div class="label">QUALITES</div>
+                        <h3 class="serif">Profil polyvalent</h3>
+                        <p>Je suis quelqu’un de motivé, curieux et persévérant. J’aime apprendre, résoudre des problèmes et avancer pas à pas en equipe ou en autonomie vers un objectif.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Vue catégorie -->
+        <div id="categoryView" class="hidden">
+            <div class="section-header">
+                <h2 class="serif" id="categoryTitle"></h2>
+                <div class="section-divider"></div>
+                <p class="article-count" id="articleCount"></p>
+            </div>
+            <div class="articles-grid" id="articlesGrid"></div>
+        </div>
+
+        <!-- Article Detail View -->
+        <div id="articleView" class="hidden">
+            <div class="article-detail" id="articleDetail"></div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-brand">
+                <svg class="footer-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z"/>
+                </svg>
+                <div class="footer-text">
+                    <p class="serif">LE JOURNAL DE GÉNIE</p>
+                    <p>Portfolio Professionnel 2026</p>
+                </div>
+            </div>
+            <div class="footer-copyright">© 2026 Tous droits réservés</div>
+        </div>
+    </footer>
+
+    <!-- Lecteur de musique flottant -->
+    <div class="music-player" id="musicPlayer">
+        <div class="player-header">
+            <h3>Playlist</h3>
+            <button class="player-toggle" id="playerToggle">−</button>
+        </div>
+        <div class="player-content" id="playerContent">
+            <div class="now-playing">
+                <p id="nowPlayingTitle">Sélectionnez une chanson</p>
+                <p id="nowPlayingArtist"></p>
+            </div>
+            <audio id="audioPlayer" class="audio-element"></audio>
+            <div class="player-controls">
+                <button id="prevBtn" class="control-btn">⏮</button>
+                <button id="playBtn" class="control-btn">▶</button>
+                <button id="nextBtn" class="control-btn">⏭</button>
+            </div>
+            <div class="progress-bar">
+                <div class="progress" id="progress"></div>
+            </div>
+            <div class="playlist-songs">
+                <div id="playlistContainer"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/data.js"></script>
+    <script src="js/utils.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/music.js"></script>
+</body>
+</html>
