@@ -280,7 +280,12 @@ function showArticle(articleId) {
 document.addEventListener('DOMContentLoaded', () => {
     btnBack.addEventListener('click', () => {
         if (currentView === 'article') {
-            showCategory(currentCategory);
+            // Si on était sur un article de projet ou a-propos, retourner au menu principal
+            if (currentCategory === 'projets' || currentCategory === 'a-propos') {
+                showView('home');
+            } else {
+                showCategory(currentCategory);
+            }
         } else if (currentView === 'category') {
             showView('home');
         }

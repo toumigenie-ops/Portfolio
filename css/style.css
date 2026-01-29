@@ -1,5 +1,4 @@
-
-        * {
+* {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
@@ -1483,6 +1482,129 @@
         }
     }
     
+    /* --- Améliorations responsive globales --- */
+@media (max-width: 900px) {
+  .container {
+    padding: 1rem 0.5rem;
+  }
+  .header-content {
+    padding: 1rem 0.5rem;
+  }
+  .categories-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  .category-card {
+    height: 280px;
+  }
+  .brief-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  .articles-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  .article-card.featured {
+    grid-column: span 1;
+  }
+  .detail-header h1 {
+    font-size: 2.2rem;
+  }
+  .section-header h2 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 600px) {
+  body {
+    font-size: 0.95rem;
+    overflow-x: hidden;
+  }
+  .header-title h1 {
+    font-size: 1.2rem;
+  }
+  nav {
+    flex-direction: column;
+    gap: 0.5rem;
+    padding-top: 0.5rem;
+  }
+  .hero-grid {
+    grid-template-columns: 1fr;
+    border-width: 2px;
+    box-shadow: 4px 4px 0 rgba(0,0,0,1);
+  }
+  .hero-image {
+    height: 180px;
+  }
+  .hero-content-img h2 {
+    font-size: 1.2rem;
+  }
+  .hero-text {
+    padding: 1rem;
+    border-left-width: 2px;
+  }
+  .hero-text h1 {
+    font-size: 2rem;
+  }
+  .divider {
+    height: 4px;
+    width: 48px;
+  }
+  .category-card {
+    height: 160px;
+    border-width: 2px;
+  }
+  .category-content h2 {
+    font-size: 1.1rem;
+  }
+  .category-icon {
+    width: 28px;
+    height: 28px;
+  }
+  .brief-section {
+    padding-top: 1rem;
+    margin-top: 1rem;
+  }
+  .brief-header h2 {
+    font-size: 1.2rem;
+  }
+  .brief-card {
+    padding: 1rem;
+    border-width: 2px;
+    box-shadow: 2px 2px 0 rgba(0,0,0,1);
+  }
+  .article-detail {
+    padding: 0 0.5rem;
+  }
+  .detail-header h1 {
+    font-size: 1.2rem;
+  }
+  .detail-excerpt {
+    padding-left: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+  }
+  .detail-excerpt p {
+    font-size: 1rem;
+  }
+  .detail-image {
+    margin-bottom: 1rem;
+    border-width: 2px;
+    box-shadow: 4px 4px 0 rgba(0,0,0,1);
+  }
+  .detail-content {
+    padding: 0;
+  }
+}
+
+/* Empêche le débordement horizontal */
+html, body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
 
 
 
