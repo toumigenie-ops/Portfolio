@@ -144,10 +144,10 @@
         .hero-grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            gap: 0;
-            border: 4px solid #000;
-            box-shadow: 8px 8px 0 rgba(0, 0, 0, 1);
-            margin-bottom: 2rem;
+            gap: 2rem;
+            border: 2px solid #000;
+            box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.8);
+            margin-bottom: 2.5rem;
             align-items: stretch;
         }
 
@@ -159,8 +159,8 @@
             overflow: hidden;
             background-color: #000;
             display: flex;
-            align-items: center;
-            justify-content: center;
+            align-items: stretch;
+            justify-content: stretch;
         }
 
         .hero-image img {
@@ -169,7 +169,7 @@
             min-height: 320px;
             object-fit: cover;
             object-position: center;
-            opacity: 0.8;
+            opacity: 0.92;
             display: block;
         }
 
@@ -200,10 +200,10 @@
 
         .hero-content-img h2 {
             color: #fff;
-            font-size: 2.5rem;
-            font-weight: 900;
-            margin-bottom: 0.75rem;
-            line-height: 1.2;
+            font-size: 1.7rem;
+            font-weight: 800;
+            margin-bottom: 0.5rem;
+            line-height: 1.1;
         }
 
         .hero-content-img p {
@@ -241,9 +241,9 @@
         }
 
         .hero-text h1 {
-            font-size: 4.5rem;
+            font-size: 2.5rem;
             font-weight: 900;
-            line-height: 1;
+            line-height: 1.1;
             margin-bottom: 1rem;
         }
 
@@ -262,16 +262,16 @@
 
         .contact-info {
             border-top: 2px solid #000;
-            padding-top: 1.5rem;
+            padding-top: 1rem;
         }
 
         .contact-item {
             display: flex;
             align-items: center;
-            gap: 0.75rem;
-            margin-bottom: 1rem;
-            font-weight: bold;
-            font-size: 1.125rem;
+            gap: 0.5rem;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+            font-size: 1rem;
         }
 
         /* Categories Grid */
@@ -330,10 +330,10 @@
 
         .category-content h2 {
             color: #fff;
-            font-size: 2.5rem;
-            font-weight: 900;
-            margin-bottom: 0.75rem;
-            line-height: 1.2;
+            font-size: 1.3rem;
+            font-weight: 800;
+            margin-bottom: 0.5rem;
+            line-height: 1.1;
         }
 
         .category-content p {
