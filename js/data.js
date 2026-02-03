@@ -6,8 +6,8 @@ const articles = [
         category: 'projets',
         date: '2025-2026',
         excerpt: 'Présentation de mes projets techniques réalisés durant mon parcours académique et personnel.',
-        content: 'Description détaillée de mes projets techniques.',
-        image: 'Portfolio/assets/vignetteideee62655.jpg',
+        content: 'Description détaillée de mes projets techniques réalisés depuis Septembre 2025.',
+        image: 'assets/vignetteideee62655.jpg',
         projects: [
             {
                 name: 'Conception d\'un Space Invader',
