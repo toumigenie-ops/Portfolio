@@ -15,9 +15,10 @@ const articles = [
                 image: 'assets/IMG_4299.jpg'
             },
             {
-                name: 'CTF CyberSécurité',
-                description: 'Participation à un Capture The Flag (CTF) en cybersécurité, résolution de divers challenges.',
-                image: 'assets/cyber.png'
+                name: 'LineUp – Gestion de club sportif',
+                description: 'Application web de gestion d\'équipes de football et basketball. Convocations, calendrier, effectif et résultats centralisés en une seule interface. Stack : React, Node.js. Version bêta disponible.',
+                image: 'assets/lineup.png',
+                url: 'https://lineup-omega.vercel.app/'
             },
             {
                 name: 'Conception d\'une Application To-Do List',

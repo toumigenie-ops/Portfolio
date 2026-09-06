@@ -53,7 +53,6 @@ function showCategory(category) {
     currentCategory = category;
     const filteredArticles = articles.filter(a => a.category === category);
     
-    // Aller directement sur l'article si c'est "projets" ou "a-propos"
     if ((category === 'projets' || category === 'a-propos') && filteredArticles.length > 0) {
         showArticle(filteredArticles[0].id);
         return;
@@ -106,16 +105,18 @@ function showArticle(articleId) {
                     <h2 class="serif">MES RÉALISATIONS</h2>
                 </div>
                 <div class="projects-grid">
-                    ${article.projects.map((project, index) => `
-                        <div class="project-card">
-                            <div class="project-image">
-                                <img src="${project.image}" alt="${project.name}">
+                    ${article.projects.map((project) => `
+                        <a href="${project.url || '#'}" target="_blank" rel="noopener noreferrer" style="text-decoration:none; color:inherit;">
+                            <div class="project-card">
+                                <div class="project-image">
+                                    <img src="${project.image}" alt="${project.name}">
+                                </div>
+                                <div class="project-content">
+                                    <h3 class="serif">${project.name}</h3>
+                                    <p>${project.description}</p>
+                                </div>
                             </div>
-                            <div class="project-content">
-                                <h3 class="serif">${project.name}</h3>
-                                <p>${project.description}</p>
-                            </div>
-                        </div>
+                        </a>
                     `).join('')}
                 </div>
             </div>
@@ -194,7 +195,7 @@ function showArticle(articleId) {
                     <h2 class="serif">PARCOURS FORMATION</h2>
                 </div>
                 <div class="timeline">
-                    ${article.education.map((edu, index) => `
+                    ${article.education.map((edu) => `
                         <div class="timeline-item ${edu.status}">
                             <div class="timeline-marker">
                                 <div class="marker-dot"></div>
@@ -269,8 +270,6 @@ function showArticle(articleId) {
             ${projectHTML}
             ${skillsHTML}
         </div>
-
-        
     `;
 
     showView('article');
@@ -280,7 +279,6 @@ function showArticle(articleId) {
 document.addEventListener('DOMContentLoaded', () => {
     btnBack.addEventListener('click', () => {
         if (currentView === 'article') {
-            // Si on était sur un article de projet ou a-propos, retourner au menu principal
             if (currentCategory === 'projets' || currentCategory === 'a-propos') {
                 showView('home');
             } else {
