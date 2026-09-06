@@ -105,15 +105,22 @@ const articles = [
                 year: 2025,
                 title: 'Bachelor Informatique',
                 school: 'Epitech Bordeaux',
-                description: 'En cours - Fin prévue 2027',
+                description: '1ère année obtenue',
                 status: 'in-progress'
             },
             {
                 year: 2026,
                 title: 'Stage de 1-3 mois',
                 school: 'À déterminer',
-                description: 'Recherche active - juin à août 2026',
-                status: 'planned'
+                description: 'juin à août 2026',
+                status: 'completed'
+            },
+            {
+                year: 2026,
+                title: '2ème Année Bachelor Informatique',
+                school: 'Epitech Bordeaux',
+                description: 'En cours - Fin prévue 2027',
+                status: 'completed'
             }
         ],
         interests: [
