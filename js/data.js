@@ -120,8 +120,9 @@ const articles = [
                 title: '2ème Année Bachelor Informatique',
                 school: 'Epitech Bordeaux',
                 description: 'En cours - Fin prévue 2027',
-                status: 'completed'
-            }
+                status: 'in-progress'
+            },
+            
         ],
         interests: [
             {
